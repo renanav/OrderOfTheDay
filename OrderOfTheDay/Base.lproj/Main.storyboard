@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VAi-XZ-xmQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1gf-xv-6bD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Todo List View Controller-->
+        <!--Order Of The Day-->
         <scene sceneID="Tbr-dO-fGd">
             <objects>
                 <tableViewController id="VAi-XZ-xmQ" customClass="TodoListViewController" customModule="OrderOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,10 +32,33 @@
                             <outlet property="delegate" destination="VAi-XZ-xmQ" id="MZS-sC-f42"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Order Of The Day" id="os4-gp-ivv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3E-6c-sk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="130"/>
+            <point key="canvasLocation" x="796" y="129.98500749625188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LEJ-em-Ljp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gf-xv-6bD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hSb-Po-GAv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.38387948960526241" green="0.80527361662017327" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VAi-XZ-xmQ" kind="relationship" relationship="rootViewController" id="0dI-SF-rwp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xp2-1C-ryB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="130"/>
         </scene>
     </scenes>
 </document>
