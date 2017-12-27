@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="VAi-XZ-xmQ" id="MZS-sC-f42"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Order Of The Day" id="os4-gp-ivv"/>
+                    <navigationItem key="navigationItem" title="Order Of The Day" id="os4-gp-ivv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="h2o-rT-6Z2">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addbuttonPressed:" destination="VAi-XZ-xmQ" id="pNl-xz-4dF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3E-6c-sk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
